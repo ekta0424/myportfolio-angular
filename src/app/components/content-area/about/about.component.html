@@ -1,0 +1,23 @@
+<section class="about-section section">
+  <div class="about-card">
+    <!-- Left side (About Information) -->
+    <div class="about-left">
+      <h2>About</h2>
+      <p *ngIf="user"> Hello! I am {{ user.name }}. {{ user.title }}.</p>
+      <p *ngIf="user">{{ user.description }}</p>
+      <a href="#">Learn More</a>
+    </div>
+
+    <!-- Right side (Basic Information) -->
+    <div class="about-right">
+      <h2>Basic Information</h2>
+      <ul>
+        <li *ngIf="user"><strong>AGE:</strong> {{ user.age }}</li>
+        <li *ngIf="user"><strong>EMAIL:</strong> {{ user.email }}</li>
+        <li *ngIf="user"><strong>PHONE:</strong> {{ user.phone }}</li>
+        <li *ngIf="user"><strong>ADDRESS:</strong> {{ user.address }}</li>
+        <li *ngIf="user"><strong>LANGUAGE:</strong> {{ user.language }}</li>
+      </ul>
+    </div>
+  </div>
+</section>
